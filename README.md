@@ -1,4 +1,4 @@
-# n8n Self-Hosted Backup Solution
+# n8n Self-Hosted + Backup Solution
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)
@@ -11,6 +11,7 @@ A complete, production-ready backup and restore system for n8n workflow automati
 
 ## 🚀 Features
 
+- **🔄 Self-hosted n8n setup** - Self-hosted n8n via docker
 - **🔄 Automated Daily Backups** - PostgreSQL database, n8n data, configurations
 - **☁️ Cloud Storage Integration** - Backblaze B2, AWS S3, Google Drive, and more
 - **🔐 Security First** - Encryption at rest and in transit
@@ -43,8 +44,8 @@ A complete, production-ready backup and restore system for n8n workflow automati
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/n8n-backup-solution.git
-cd n8n-backup-solution
+git clone https://github.com/blahkheart/n8n-self-hosted-plus-cloud-backup.git
+cd n8n-self-hosted-plus-cloud-backup
 ```
 
 ### 2. Start n8n
@@ -68,15 +69,15 @@ That's it! Your n8n instance is now running with enterprise-grade backup protect
 
 ```bash
 # Clone and setup everything
-curl -sSL https://raw.githubusercontent.com/yourusername/n8n-backup-solution/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/blahkheart/n8n-self-hosted-plus-cloud-backup/main/install.sh | bash
 ```
 
 ### Method 2: Manual Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/n8n-backup-solution.git
-   cd n8n-backup-solution
+   git clone https://github.com/blahkheart/n8n-self-hosted-plus-cloud-backup.git
+   cd n8n-self-hosted-plus-cloud-backup
    ```
 
 2. **Start n8n services**
@@ -104,7 +105,7 @@ docker run -d \
   -p 5678:5678 \
   -v n8n_data:/home/node/.n8n \
   -v ./backups:/backups \
-  yourusername/n8n-backup-solution:latest
+  yourusername/n8n-self-hosted-plus-cloud-backup:latest
 ```
 
 ## ⚙️ Configuration
@@ -231,8 +232,8 @@ tail -f logs/backup.log
 #### 1. Complete Disaster Recovery
 ```bash
 # Start from scratch on new system
-git clone https://github.com/yourusername/n8n-backup-solution.git
-cd n8n-backup-solution
+git clone https://github.com/blahkheart/n8n-self-hosted-plus-cloud-backup.git
+cd n8n-self-hosted-plus-cloud-backup
 ./cloud-restore.sh --restore-latest
 ```
 
@@ -462,9 +463,9 @@ tail -f logs/workflow-export.log
 
 ### Support
 
-- 📧 **Issues**: [GitHub Issues](https://github.com/yourusername/n8n-backup-solution/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/n8n-backup-solution/discussions)
-- 📖 **Documentation**: [Wiki](https://github.com/yourusername/n8n-backup-solution/wiki)
+- 📧 **Issues**: [GitHub Issues](https://github.com/blahkheart/n8n-self-hosted-plus-cloud-backup/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/blahkheart/n8n-self-hosted-plus-cloud-backup/discussions)
+- 📖 **Documentation**: [Wiki](https://github.com/blahkheart/n8n-self-hosted-plus-cloud-backup/wiki)
 - 🆘 **Emergency**: Check [troubleshooting guide](docs/troubleshooting.md)
 
 ## 🤝 Contributing
@@ -483,8 +484,8 @@ We welcome contributions! This project aims to provide the best backup solution 
 
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/n8n-backup-solution.git
-cd n8n-backup-solution
+git clone https://github.com/your-username/n8n-self-hosted-plus-cloud-backup.git
+cd n8n-self-hosted-plus-cloud-backup
 
 # Setup development environment
 ./dev-setup.sh
@@ -521,10 +522,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Statistics
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/n8n-backup-solution?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/n8n-backup-solution?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/n8n-backup-solution)
-![GitHub license](https://img.shields.io/github/license/yourusername/n8n-backup-solution)
+![GitHub stars](https://img.shields.io/github/stars/blahkheart/n8n-self-hosted-plus-cloud-backup?style=social)
+![GitHub forks](https://img.shields.io/github/forks/blahkheart/n8n-self-hosted-plus-cloud-backup?style=social)
+![GitHub issues](https://img.shields.io/github/issues/blahkheart/n8n-self-hosted-plus-cloud-backup)
+![GitHub license](https://img.shields.io/github/license/blahkheart/n8n-self-hosted-plus-cloud-backup)
 
 ---
 
